@@ -1,4 +1,4 @@
-/* This is the css stylesheet */
+
 
 /* This is the grid container */
 .grid-container{
@@ -11,9 +11,12 @@
 /* This is the navbar */
 .navbar{
   grid-area: navbar;
-  height: 55px;
+  height: 90px;
   background: black;
-  margin-top: -8px;
+  margin-top: -27px;
+  /* position: fixed; */
+  
+
 }
 
 /* This is the logo inside the navbar */
@@ -22,10 +25,10 @@
   float: left;
   height: 100%;
   margin-left: 10%;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Bungee Inline', cursive;
   text-align: center;
   font-size: 2em;
-  margin-top: -25px;
+  margin-top: -20px;
   color: white;
 }
 .logo > a{
@@ -37,11 +40,12 @@
 .links{
   float: left;
   height: 100%;
-  width: 40%;
-  margin-top: 10px;
+  width: 60%;
+  margin-top: 3%;
   word-spacing: 10px;
   font-family: 'BenchNine', sans-serif;
-  font-size: 1.65em;
+  font-size: 15px;
+  margin-left: 2%;
 }
 .links > a:link, .links > a:visited{
   color: white;
@@ -53,15 +57,18 @@
 
 /* This is the social media inside the navbar */
 .social-media{
-  float: left;
+  float: right;
   height: 100%;
-  width: 18%;
-  margin-right: 10%;
+  width: 12%;
+  padding-left: 78%;
+  margin-block-start: -9%;
+  margin-right: 2%;
 }
 
 /* This is the facebook logo */
 .face-logo1{
   margin-top: 7px;
+  margin-left: 10px;
   width: 20%;
   height: 70%;
   background: url('../img/facebook.png');
@@ -74,7 +81,7 @@
 /* This is the twitter logo */
 .twitter-logo1{
   margin-top: 7px;
-  width: 20%;
+  width: 17%;
   height: 70%;
   background: url('../img/twitter2.png');
   background-size: contain;
@@ -84,14 +91,20 @@
   margin-left: 20px;
 }
 .share-logo{
-  width: 20%;
+  width: 8%;
   height: 70%;
-  background: url('../img/share-logo.png');
+  background: url('../img/wifi.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   float: left;
+  margin-left: 20px;
+  padding-top: 15px;
+  margin-block-start: 8%;
   
+}
+.article-container{
+  padding-left: 18px;
 }
 
 /* This is the body of contents */
@@ -172,7 +185,7 @@
 }
 /* This is the share logo */
 .share-logo{
-  background: url('../img/share_logo.png');
+  background: url('../img/wifi.png');
   background-size: contain;
   background-position: cover;
   background-repeat: no-repeat;
@@ -196,7 +209,7 @@
 /* This is the big facebook picture on the mobiles */
 .face-image{
   height: 450px;
-  background: url('../images/faces-image.jpg');
+  background: url('../img/phones.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -248,7 +261,7 @@ iframe{
 /* This is the ads box 1 image */
 .box_1{
   height: 200px;
-  background: url('../images/fortnite.jpg');
+  background: url('../img/pubg-ad.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -262,30 +275,30 @@ iframe{
 /* This is the ads box 2 image */
 .box_2{
   height: 200px;
-  background: url('../images/movie.jpg');
+  background: url('../img/man-ad.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 /* This is the articles box */
-.article-box1{
+.article1{
   height: 180px;
 }
 
 /* This is the first article image */
-.article-box1-image{
+.article1-image{
   height: 180px;
   width: 40%;
   float: left;
-  background: url('../images/article1.jpg');
+  background: url('../img/fox.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 /* This is the first article text */
-.article-box1-text{
+.article1-text{
   height: 180px;
   width: 55%;
   float: left;
@@ -293,22 +306,22 @@ iframe{
 }
 
 /* This is the article box */
-.article-box2{
+.article2{
   height: 180px;
 }
 
 /* This is the second article image */
-.article-box2-image{
+.article2-image{
   height: 180px;
   width: 40%;
   float: left;
-  background: url('../images/article2.jpg');
+  background: url('../img/skysports.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 /* This is the second article text */
-.article-box2-text{
+.article2-text{
   height: 180px;
   width: 55%;
   float: left;
@@ -316,22 +329,22 @@ iframe{
 }
 
 /* This is article box 3 */
-.article-box3{
+.article3{
   height: 180px;
 }
 
 /* This is the thrid article image */
-.article-box3-image{
+.article3-image{
   height: 180px;
   width: 40%;
   float: left;
-  background: url('../images/article3.jpg');
+  background: url('../img/bbc.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 /* This is the thrid article text */
-.article-box3-text{
+.article3-text{
   height: 180px;
   width: 55%;
   float: left;
@@ -339,21 +352,21 @@ iframe{
 }
 
 /* This is the forth article box */
-.article-box4{
+.article4{
   height: 180px;
 }
 /* This is the forth article image */
-.article-box4-image{
+.article4-image{
   height: 180px;
   width: 40%;
   float: left;
-  background: url('../images/article4.jpg');
+  background: url('../img/bmwm4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 /* This is the forth article text */
-.article-box4-text{
+.article4-text{
   height: 180px;
   width: 55%;
   float: left;
@@ -385,7 +398,7 @@ iframe{
   color: white;
   width: 20%;
   font-size: 1.5em;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Bungee Inline', cursive;
   letter-spacing: 3px;
   margin-top: 100px;
   margin-left: 50px;
