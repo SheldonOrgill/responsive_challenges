@@ -1,0 +1,461 @@
+
+body{
+    background-color: grey;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 'header header header header header'
+    'home-screen home-screen home-screen home-screen home-screen'
+    'navbar category-1 category-1 category-1 category-1'
+    'navbar cat1-pic1 cat1-pic2 cat1-pic3 cat1-pic4'
+    'navbar cat1-pic5 cat1-pic6 cat1-pic7 cat1-pic8'
+    'navbar category-2 category-2 category-2 category-2'
+    'navbar cat2-pic1 cat2-pic2 cat2-pic3 cat2-pic4'
+    'navbar cat2-pic5 cat2-pic6 cat2-pic7 cat2-pic8'
+    'navbar category-3 category-3 category-3 category-3'
+    'navbar cat3-pic1 cat3-pic2 cat3-pic3 cat3-pic4'
+    'footer footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+.header{
+    grid-area: header;
+    border: 2px solid white;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 1.5em;
+    color: white;
+    float: left;
+    text-shadow: 2px 2px 5px yellow;
+}
+
+.header > p{
+    text-align: right;
+    margin-right: 50px;
+    color: white;
+    text-shadow: 0px 0px 0px;
+
+}
+
+
+.home-screen{
+    border: 2px solid white;
+    grid-area: home-screen;
+    height: 400px;
+    background: url('../img/putlocker1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.navbar{
+    border: 2px solid white;
+    grid-area: navbar;
+    font-size: 1.25em;
+    background: black;
+    color: white;
+}
+
+
+.navbar > h3{
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.navbar > h4{
+    text-align: center;
+
+}
+
+
+.navigate{
+    margin-left: 10px;
+    margin-right: 10px;
+    position: sticky;
+    top: 50px;
+    border-radius: 5%;
+    border-bottom: 2px solid transparent;
+    transition: all ease-out 0.5s;
+}
+
+
+.navigate > ul > li{
+    list-style: none;
+    margin-left: -20px;
+}
+
+
+.navigate > ul > li > a{
+    color: blue;
+    text-decoration: none;
+    line-height: 60px;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+
+.navigate > ul > li > a:hover{
+    color: yellowgreen;
+    transition: all ease-out 0.5s;
+}
+
+
+.col_red{
+    color: yellow;
+}
+
+
+.category-1{
+    border: 2px solid white;
+    grid-area: category-1;
+    text-align: center;
+    font-size: 1.25em;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.cat1-pic1{
+    border: 2px solid white;
+    border-radius: 15px;
+    grid-area: cat1-pic1;
+    height: 300px;
+    background: url('../img/creed2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat1-pic2{
+    border: 2px solid white;
+    border-radius: 15px;
+    grid-area: cat1-pic2;
+    height: 300px;
+    background: url('../img/Bumblebee.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat1-pic3{
+    border: 2px solid white;
+    grid-area: cat1-pic3;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/dbz_broly.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat1-pic4{
+    border: 2px solid white;
+    grid-area: cat1-pic4;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/theUpside.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat1-pic5{
+    border: 2px solid white;
+    grid-area: cat1-pic5;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/Glass.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cat1-pic6{
+    border: 2px solid white;
+    grid-area: cat1-pic6;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/close.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat1-pic7{
+    border: 2px solid white;
+    grid-area: cat1-pic7;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/holmes&watson.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.cat1-pic8{
+    border: 2px solid white;
+    grid-area: cat1-pic8;
+    height: 300px;
+
+    border-radius: 15px;
+    background: url('../img/theMule.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.category-2{
+    border: 2px solid white;
+    grid-area: category-2;
+    text-align: center;
+    font-size: 1.25em;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+.cat2-pic1{
+    border: 2px solid white;
+    grid-area: cat2-pic1;
+    height: 300px;
+    background: url('../img/grandTour.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat2-pic2{
+    border: 2px solid white;
+    border-radius: 15px;
+    grid-area: cat2-pic2;
+    height: 300px;
+    background: url('../img/911.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat2-pic3{
+    border: 2px solid white;
+    grid-area: cat2-pic3;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/twoMen.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat2-pic4{
+    border: 2px solid white;
+    grid-area: cat2-pic4;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/fbi.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat2-pic5{
+    border: 2px solid white;
+    grid-area: cat2-pic5;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/ballers.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.category-3{
+    border: 2px solid white;
+
+    grid-area: category-3;
+    text-align: center;
+    font-size: 1.25em;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+.cat3-pic1{
+    border: 2px solid white;
+    border-radius: 15px;
+    grid-area: cat3-pic1;
+    height: 300px;
+    background: url('../img/bad_boys.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.cat3-pic2{
+    border: 2px solid white;
+    border-radius: 15px;
+    grid-area: cat3-pic2;
+    height: 300px;
+    background: url('../img/dude.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cat3-pic3{
+    border: 2px solid white;
+    grid-area: cat3-pic3;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/Spider.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.cat3-pic4{
+    border: 2px solid white;
+    grid-area: cat3-pic4;
+    height: 300px;
+    border-radius: 15px;
+    background: url('../img/dbz.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.footer{
+    border: 2px solid white;
+
+    grid-area: footer;
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.15em;
+    letter-spacing: 2px;
+}
+
+
+p1{
+    float: left;
+}
+p2{
+    float: right;
+}
+
+/* mobile */
+@media only screen
+  and (min-device-width: 1px)
+  and (max-device-width: 500px)
+  and (-webkit-min-device-pixel-ratio: 2){
+      .header{
+          font-size: 2.4em;
+      }
+      .grid-container{
+        display: grid;
+        grid-template-areas: 'header header header'
+        'home-screen home-screen home-screen'
+        'navbar category-1 category-1'
+        'navbar cat1-pic1 cat1-pic2'
+        'navbar cat1-pic3 cat1-pic4'
+        'navbar cat1-pic5 cat1-pic6'
+        'navbar cat1-pic7 cat1-pic8'
+        'navbar category-2 category-2'
+        'navbar cat2-pic1 cat2-pic2'
+        'navbar cat2-pic3 cat2-pic4'
+        'navbar cat2-pic5 cat2-pic6'
+        'navbar cat2-pic7 cat2-pic8'
+        'navbar category-3 category-3'
+        'navbar cat3-pic1 cat3-pic2'
+        'navbar cat3-pic3 cat3-pic4'
+        'footer footer footer';
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
+    .home-screen{
+        background-size: cover;
+    }
+  }
+
+/* tablet */
+@media only screen
+  and (min-device-width: 500px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .home-screen{
+        background-size: cover;
+    }
+    .navigate{
+        font-size: 0.5em;
+    }
+}
+
+/* desktop */
+@media only screen
+  and (min-device-width: 1600px)
+  and (max-device-width: 2560px)
+  and (-webkit-min-device-pixel-ratio: 2){
+    .home-screen{
+        background-size: cover;
+        height: 800px;
+    }
+    .header{
+        font-size: 3em;
+    }
+    .navigate{
+        line-height: 100px;
+    }
+    .navbar{
+        font-size: 2.5em;
+    }
+    .category-1, .category-2, .category-3{
+        font-size: 2em;
+    }
+    .cat1-pic1, .cat1-pic2, .cat1-pic3, .cat1-pic4, .cat1-pic5, .cat1-pic6, .cat1-pic7, .cat1-pic8{
+        height: 600px;
+    }
+    .cat2-pic1, .cat2-pic2, .cat2-pic3, .cat2-pic4, .cat2-pic5, .cat2-pic6, .cat2-pic7, .cat2-pic8{
+        height: 600px;
+    }
+    .cat3-pic1, .cat3-pic2, .cat3-pic3, .cat3-pic4{
+        height: 600px;
+    }
+    .footer{
+        font-size: 3em;
+    }
+}
